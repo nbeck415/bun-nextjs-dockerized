@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  next:
+    labels:
+      shipyard.route: '/'
+    build:
+      context: .
+    ports:
+      - '8080:80'
+    volumes:
+      - './public:/app/public'
+      - './src:/app/src'

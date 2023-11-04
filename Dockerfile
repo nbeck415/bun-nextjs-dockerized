@@ -12,4 +12,4 @@ RUN bun install
 COPY . .
 
 # Start app in development mode
-CMD ["bun", "--hot", "dev"]
+CMD ["bun", "run", "dev"]

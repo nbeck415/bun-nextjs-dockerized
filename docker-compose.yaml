@@ -8,6 +8,13 @@ services:
       context: .
     ports:
       - '3000:3000'
-    volumes:
-      - './public:/app/public'
-      - './src:/app/src'
+    develop:
+      watch:
+        - action: sync
+          path: ./public
+          target: /app/public
+        - action: sync
+          path: ./src
+          target: /app/src
+        - action: rebuild
+          path: package.json

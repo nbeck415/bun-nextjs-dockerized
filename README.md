@@ -1,5 +1,7 @@
 This is a Bun [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I generated the Next.js project through the `bun create-next-app` command and then added a Dockerfile and Compose file. 
 
+![Nextjs Docker Bun](/public/nextjs-bun-docker.png)
+
 ## Running with Bun
 
 You can run the non-Dockerized project using:
